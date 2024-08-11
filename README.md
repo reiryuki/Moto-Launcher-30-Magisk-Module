@@ -21,7 +21,7 @@
 ## Installation Guide & Download Link
 - Install Moto Core Magisk Module first: https://github.com/reiryuki/Moto-Core-Magisk-Module
 - If you want to activate the recents provider, READ Optionals bellow!
-- Install this module https://www.pling.com/p/1645413/ via Magisk app or KernelSU app only
+- Install this module https://www.pling.com/p/2188203/ via Magisk app or KernelSU app only
 - If you are using KernelSU, you need to disable Unmount Modules by Default in KernelSU app settings
 - Reboot
 - If you are using KernelSU, you need to allow superuser list manually all package name listed in package.txt (and your home launcher app also) (enable show system apps) and reboot afterwards

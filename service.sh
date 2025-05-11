@@ -32,19 +32,16 @@ fi
 # grant
 PKG=com.motorola.launcher3
 if appops get $PKG > /dev/null 2>&1; then
-  pm grant $PKG android.permission.READ_EXTERNAL_STORAGE
-  pm grant $PKG android.permission.WRITE_EXTERNAL_STORAGE
-  pm grant $PKG android.permission.READ_PHONE_STATE
-  pm grant $PKG android.permission.CALL_PHONE
+  pm grant --all-permissions $PKG
   appops set $PKG SYSTEM_ALERT_WINDOW allow
   if [ "$API" -ge 30 ]; then
     appops set $PKG AUTO_REVOKE_PERMISSIONS_IF_UNUSED ignore
   fi
   if [ "$API" -ge 33 ]; then
-    pm grant $PKG android.permission.READ_MEDIA_IMAGES
-    pm grant $PKG android.permission.READ_MEDIA_AUDIO
-    pm grant $PKG android.permission.READ_MEDIA_VIDEO
     appops set $PKG ACCESS_RESTRICTED_SETTINGS allow
+  fi
+  if [ "$API" -ge 35 ]; then
+    appops set $PKG RECEIVE_SENSITIVE_NOTIFICATIONS allow
   fi
   PKGOPS=`appops get $PKG`
   UID=`dumpsys package $PKG 2>/dev/null | grep -m 1 Id= | sed -e 's|    userId=||g' -e 's|    appId=||g'`

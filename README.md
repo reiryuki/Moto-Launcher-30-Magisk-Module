@@ -9,16 +9,17 @@
 
 ## Sources
 - Launcher3QuickStep.apk https://dumps.tadiphone.dev/dumps/motorola/nio msi_prc-user-11-RRN31.Q3-1-11-1-919e2-release-keys
+- libmagiskpolicy.so: Kitsune Mask R6687BB53
 
 ## Screenshots
 - https://t.me/androidryukimods/292
 
 ## Requirements
-- Android 9 and up
+- Android 9 (SDK 28) and up
 - Magisk or KernelSU installed
 - Moto Core Magisk Module installed https://github.com/reiryuki/Moto-Core-Magisk-Module
-- Recents provider requires Android 11 and up
-- Gesture navigation requires android.permission.INJECT_EVENTS. The permission can only be granted in AOSP signatured ROM or disabled Android Signature Verification in Android 13 and bellow.
+- Recents provider requires Android 11 (SDK 30) and up
+- Gesture navigation requires android.permission.INJECT_EVENTS. The permission can only be granted in AOSP signatured ROM or disabled Android Signature Verification in Android 13 (SDK 33) and bellow.
 
 ## Installation Guide & Download Link
 - Install Moto Core Magisk Module first: https://github.com/reiryuki/Moto-Core-Magisk-Module
@@ -30,19 +31,19 @@
 - Change your default home to this Moto Launcher
 
 ## Optionals
-- Global: https://t.me/androidryukimodsdiscussions/60861
+- https://t.me/ryukinotes/82
+- Global: https://t.me/ryukinotes/35
 
 ## Troubleshootings
-- https://t.me/androidryukimodsdiscussions/46628
-- Global: https://t.me/androidryukimodsdiscussions/29836
+- https://t.me/ryukinotes/82
+- Global: https://t.me/ryukinotes/34
 
 ## Known Issues
-- Recents split screen is only working in Android 12 and 11
-- Recents screenshot button is only working in Android 11
+- Recents screenshot button is only working in Android 11 (SDK 30)
 - Recents Edge display doesn't work
 
 ## Support & Bug Report
-- https://t.me/androidryukimodsdiscussions/2618
+- https://t.me/ryukinotes/54
 - If you don't do above, issues will be closed immediately
 
 ## Credits and Contributors
@@ -50,6 +51,6 @@
 - You can contribute ideas about this Magisk Module here: https://t.me/androidappsportdevelopment
 
 ## Sponsors
-- https://t.me/androidryukimodsdiscussions/2619
+- https://t.me/ryukinotes/25
 
 

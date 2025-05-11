@@ -12,7 +12,7 @@
 - libmagiskpolicy.so: Kitsune Mask R6687BB53
 
 ## Screenshots
-- https://t.me/androidryukimods/292
+- https://t.me/androidryukimods/294
 
 ## Requirements
 - Android 9 (SDK 28) and up

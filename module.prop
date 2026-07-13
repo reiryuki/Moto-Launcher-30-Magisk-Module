@@ -1,7 +1,7 @@
 id=MotoLauncher
 name=Moto Launcher 30
-version=v1.16
-versionCode=16
+version=v1.17
+versionCode=17
 author=Rei Ryuki the Fixer
 description=Home Launcher app target SDK 30 by Motorola Mobility LLC. ported for any Android 9 (SDK 28) and up.
 

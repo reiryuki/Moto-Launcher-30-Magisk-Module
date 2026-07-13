@@ -114,18 +114,19 @@ for NAME in $NAMES; do
    /persist/magisk/$NAME\
    /data/unencrypted/magisk/$NAME\
    /cache/magisk/$NAME\
-   /cust/magisk/$NAME
+   /cust/magisk/$NAME\
+   /klogdump/magisk/$NAME
 done
 }
 
 # function
 check_permission() {
-if ! appops get $PKG > /dev/null 2>&1; then
+if ! appops get $PKG >/dev/null 2>&1; then
   ui_print "- Checking $NAME"
   ui_print "  of $PKG..."
   FILE=`find $MODPATH/system -type f -name $APP.apk`
   RES=`pm install -g -i com.android.vending $FILE 2>/dev/null`
-  if appops get $PKG > /dev/null 2>&1; then
+  if appops get $PKG >/dev/null 2>&1; then
     if ! dumpsys package $PKG | grep -q "$NAME: granted=true"; then
       ui_print "  ! You need to disable your Android Signature Verification"
       ui_print "    first to use this recents provider, otherwise it will crash."
